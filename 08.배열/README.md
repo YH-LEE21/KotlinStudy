@@ -3,8 +3,8 @@
 ***
 
 - 특정 하나의 변수에 복수개의 값을 할당하고 싶은  경우
-var number :Int = 10 -> 10이라는 값이 number라는 변수에 할당된다
-var exam_scores :Int = 100,98,75 
+    - var number :Int = 10 -> 10이라는 값이 number라는 변수에 할당된다
+    - var exam_scores :Int = 100,98,75 
 - 배열은 저장될 수 있는 값의 갯수를 정해야 하고, 이 갯수는 변경 할 수 없다.
 
 1. 배열을 선언하는 방법 (1)
@@ -12,12 +12,15 @@ var exam_scores :Int = 100,98,75
     - arrayOf<자료형/생략>(값1, 값2, 값3)
         - 생략했을 경우 복수개의 자료형이 배열의 인자로 올 수 있다.
         - var array1 = arrayOf(true, false,"안녕하세요",10,2.2)
+    
     - 자료형을 적어 줬을 경우, 해당 자료형만 인자로 들어 올 수 있다.
         - var array2 = arrayOf<Int>(10,20,30)
         - var array3 = arrayOf<Double>(2.2,4.5)
+   
     - <자료형> ->를 대체 할 수 있는 방법
         - var array4 = intArrayOf(1,2,3,4,5)
         - var array5 = booleanArrayOf(true,false,true)
+    
     - null을 인자로 받는 배열
         - var nulls = arrayOfNulls<Int>(4,2,null)
 ```
@@ -26,6 +29,7 @@ var exam_scores :Int = 100,98,75
 ```   
     - 자료형/생략Array(크기,{값 / 생략가능})
         - var array6 = Array(10,{0})
+    
     - 자료형 명시
         - var array7 = IntArray(10,{0})
         - var array8 = DoubleArray(10,{0.0})
@@ -45,6 +49,7 @@ var exam_scores :Int = 100,98,75
     - 1번 방법 -> 배열명[index] = 값
         - array12[2] = 100
         - array12[0] = 1
+    
     - 2번 방법 -> 배열명.set(index, 값)
         - array12.set(2, 100)
         - array12.set(0, 1)
@@ -54,6 +59,7 @@ var exam_scores :Int = 100,98,75
 ```   
     - 배열명[index]
         - val value = array12[3]  
+    
     - 배열명.get(index)
         - val value2 = array12.get(0)
 ```        
